@@ -1,0 +1,70 @@
+.hold{
+	background: url(../img/17.jpg);
+}
+#doushface{
+	border-radius: 100%;
+
+}
+.nav-login{
+	float: right;
+}
+.img-small{
+	max-height: 50px;
+	max-width: 50px;
+}
+.custom{
+	background: #4285F4;
+}
+.custom-dropdown{
+	background: #4285F4;
+}
+.footer-height{
+	margin-top: 100px;
+    position: relative;
+    horiz-align: center;
+    bottom: 0px;
+    width: 100%;
+}
+.matching-person{
+    float: none;
+}
+.matching-bank{
+    float: none;
+}
+.matching-person1{
+    float: none;
+}
+.matching-bank1{
+    float: none;
+}
+#boxemup{
+    height: 100vh;
+    z-index: 1000;
+}
+.member-id {
+    padding-right: 10px;
+}
+#passwordreset{
+    height: 100vh;
+}
+@media screen and (min-width: 500px){
+    .matching-block{
+
+    }
+    .matching-person{
+        float: left;
+        margin-right: 300px;
+        margin-left:auto;
+    }
+    .matching-bank{
+        float: none;
+        margin-bottom: 30px;
+    }
+    .transaction-buttons{
+        float: right;
+    }
+    #passwordreset{
+        height:100vh;
+        width: 50%;
+    }
+}

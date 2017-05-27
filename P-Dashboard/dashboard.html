@@ -1,0 +1,317 @@
+﻿<!-- ===============================================================================================
+     __     __             __           ___        __
+    |  |   /  /           /  \          \  \      /  /
+    |  |  /  /           /    \          \  \    /  /
+    |  | /  /           /  /\  \          \  \  /  /
+    |  |/  /           /  /  \  \          \  \/  /
+    |     <           /  /____\  \          \    /
+    |  |\  \         /  ________  \          |   |
+    |  | \  \       /  /        \  \         |   |
+    |  |  \  \     /  /          \  \        |   |
+    |__|   \__\   /__/            \__\       |___|
+
+=============================================================================================== -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Megamony</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!--links to stylesheets-->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet'>
+    <link href='src/vendor/normalize.css/normalize.css' rel='stylesheet'>
+    <link href='src/vendor/fontawesome/css/font-awesome.min.css' rel='stylesheet'>
+    <link href="dist/vertical-responsive-menu.min.css" rel="stylesheet">
+    <link href="dist/demo.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="dist/mastyle.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+    <!-- bootstrap CDN -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Mdbootstrap CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.2.0/css/mdb.min.css"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<header class="header clearfix">
+    <button type="button" id="toggleMenu" class="toggle_menu">
+        <i class="fa fa-bars"></i>
+    </button>
+    <a href="dashboard.html"><h1>Megamony</h1></a>
+
+</header>
+
+<nav class="vertical_nav">
+
+    <ul id="js-menu" class="menu">
+
+        <li class="menu--item">
+            <a href="dashboard.html" class="menu--link menu--link--active" title="Dashboard">
+                <i class="menu--icon  fa fa-fw fa-briefcase"></i>
+                <span class="menu--label">Dashboard</span>
+            </a>
+        </li>
+
+        <li class="menu--item">
+            <a href="profile.html" class="menu--link" title="Earnings">
+                <i class="menu--icon  fa fa-fw fa-briefcase"></i>
+                <span class="menu--label">Profile</span>
+            </a>
+        </li>
+
+        <li class="menu--item">
+            <a href="transactions.html" class="menu--link" title="Transactions">
+                <i class="menu--icon  fa fa-fw fa-cog"></i>
+                <span class="menu--label">Transactions</span>
+            </a>
+        </li>
+
+        <li class="menu--item">
+            <a href="#" class="menu--link" title="Support">
+                <i class="menu--icon  fa fa-fw fa-globe"></i>
+                <span class="menu--label">Support</span>
+            </a>
+        </li>
+
+        <li class="menu--item">
+            <a href="login.html" class="menu--link" title="Log out">
+                <i class="menu--icon  fa fa-fw fa-globe"></i>
+                <span class="menu--label">Log Out</span>
+            </a>
+        </li>
+
+    </ul>
+
+    <button id="collapse_menu" class="collapse_menu">
+        <i class="collapse_menu--icon  fa fa-fw"></i>
+        <span class="collapse_menu--label">Collapse Menu</span>
+    </button>
+
+</nav>
+
+
+<div class="wrapper">
+
+    <section>
+        <div class=" card card-block">
+
+            <p>
+            <h3>Notice!!</h3>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum interdum orci in finibus.
+            Cras eu ante condimentum, efficitur libero vitae, rhoncus eros. Curabitur a auctor sem, ac porta metus.
+            Ut volutpat eu neque nec mattis. Nullam viverra sem vitae diam sollicitudin pulvinar. Ut elementum urna
+            non mollis eleifend. Cras maximus rhoncus lacus, vitae pellentesque nunc sodales a. Donec blandit nec
+            odio sit amet porttitor.
+            Money Donated is not refundable
+            </p>
+        </div>
+
+        <br>
+
+        <h4 class="flex-center"><b>Select a Package</b></h4>
+
+        <div class="container-fluid">
+            <!--categories-->
+            <div class="col-md-6">
+                <div class=" card card-block">
+                    <h4 class="modal-header text-md-center"><b>Profesional</b></h4>
+                    <p>Donate 10,000</p>
+                    <p><b>ROI:</b>15,000</p>
+                    <button type="button" class="btn btn-primary flex-center" data-toggle="modal" data-target="#PH1">Select</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class=" card card-block">
+                    <h4 class="modal-header text-md-center"><b>Jagaban</b></h4>
+                    <p>Donate 50,000</p>
+                    <p><b>ROI:</b>75,000</p>
+                    <button type="button" class="btn btn-primary flex-center" data-toggle="modal" data-target="#PH1">Select</button>
+                </div>
+            </div>
+            <!--end categories-->
+        </div>
+        <!--end select a catgory -->
+
+        <!--format for matched orders-->
+        <!--PHer View-->
+        <div class="row card card-block matching-block">
+            <p>You have been matched!</p>
+            <div class="matching-person" id="matching-person">
+                <p>Name: (getName)</p>
+                <p>Phone no: (GetNumber)</p>
+                <p>Amount: (getAmount)</p>
+            </div>
+            <div class="matching-bank" id="matching-bank">
+                <p>Account name: (getAccoutName)</p>
+                <p>Account No: (getAccountNumber)</p>
+                <p>Bank Name: (getBankName)</p>
+            </div>
+            <!--transaction buttons-->
+            <div class="transaction-buttons">
+                <button class="btn btn-primary">I have made payment</button>
+                <button class="btn btn-danger" data-toggle="modal" data-target="#deleteaccout">I cannot make payment</button>
+            </div>
+        </div>
+        <!--./PHer View-->
+        <br/>
+        <br/>
+        <!--reciever view -->
+        <div class="row card card-block matching-block">
+            <p>You have been matched!</p>
+            <div class="matching-person" id="matching-person1">
+                <p>Name: (getName)</p>
+                <p>Phone no: (GetNumber)</p>
+                <p>Amount: (getAmount)</p>
+            </div>
+            <!--transaction buttons-->
+            <div class="transaction-buttons">
+                <button class="btn btn-primary">I have recieved payment</button>
+                <button class="btn btn-danger" data-toggle="modal" data-target="#deleteaccout1">I have not recieved payment</button>
+            </div>
+        </div>
+        <!--./reciever View-->
+        <!--xtras -->
+        <div class="">
+            <!--PH success message-->
+            <div class="alert alert-success" role="alert">
+                <p><b>Operation Successful!</b> Please wait to be matched</p>
+            </div>
+            <!--./PH success message-->
+            <!--PH failed Message-->
+            <div class="alert alert-danger" role="alert">
+                <p><b>Operation Failed!</b> Please retry after sometime</p>
+            </div>
+            <!--./PH failed Message-->
+            <!--rematch notification-->
+            <div class="alert alert-success" role="alert">
+                <p><b>Rematch Request Taken!</b> Please wait to be rematched</p>
+            </div>
+            <!--./rematch notification-->
+            <!--matching motification-->
+            <div class="alert alert-success" role="alert">
+                <p><b>You have been Matched!</b> Check details below</p>
+            </div>
+            <!--./matching notification-->
+            <!--PH modal 1-->
+            <div class="modal fade" id="PH1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <!--Content-->
+                    <div class="modal-content">
+                        <!--Header-->
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel">Confirm Request</h4>
+                        </div>
+                        <!--Body-->
+                        <div class="modal-body">
+                            <form class="form-inline">
+                                <!--fetch the amount to be donated here $amount-->
+                                <p>You have requested to Donate $amount </p>
+                                <label>Amount</label>
+                                <select name="amount">
+                                    <option>10,000</option>
+                                    <option>50,000</option>
+                                </select>
+                                <br>
+
+                                <input type="checkbox">
+                                <label>Agree to the <a href="">Terms and Conditions</a></label>
+                            </form>
+                        </div>
+                        <!--Footer-->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary">Confirm</button>
+                        </div>
+                    </div>
+                    <!--/.Content-->
+                </div>
+            </div>
+            <!--upload modal-->
+            <div class="modal fade" id="uploadproof" tabindex="-1" role="alertdialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog card card-block" role="definition">
+                    <p><b>Note!</b> This action cannot be reversed</p>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger">Confirm</button>
+                        <button type="button" class="btn btn-cyan" data-dismiss="true">Cancel</button>
+                    </div>
+                </div>
+            </div>
+            <!--./upload modal-->
+
+            <!--./PH modal 1-->
+            <!--delete account modal 1 PHer-->
+            <div class="modal fade" id="deleteaccout" tabindex="-1" role="alertdialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog card card-block" role="definition">
+                    <p class="alert alert-danger"><b>Note!</b> This action cannot be reversed</p>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger">Confirm</button>
+                        <button type="button" class="btn btn-cyan" data-dismiss="true">Cancel</button>
+                    </div>
+                </div>
+            </div>
+            <!--./delete account modal 1 PHer-->
+
+            <!--delete account modal 1 GHer-->
+            <div class="modal fade" id="deleteaccout1" tabindex="-1" role="alertdialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog card card-block" role="definition">
+                    <h3>Please wait for the timer to Elapse first</h3>
+                    <p>Before you proceed with this action ensure that you have contacted the person to make donations to you
+                    <p class="alert alert-info">Do not use this button for fraudulent purposes!</p>
+                    </p>
+                    <p class="alert alert-danger"><b>Note!</b> This action cannot be reversed</p>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger">Confirm</button>
+                        <button type="button" class="btn btn-cyan" data-dismiss="true">Cancel</button>
+                    </div>
+                </div>
+            </div>
+            <!--./delete account modal 1 Gher-->
+        </div>
+        <!--./xtras-->
+    </section>
+
+    <footer class="card-footer footer-height">
+        <div class="card-block flex-center">
+            <p>Copyright: <a href="www.megamony.com">Megamony</a>  2017 | All rights Reserved</p>
+        </div>
+    </footer>
+
+</div>
+
+<script src="dist/vertical-responsive-menu.min.js"></script>
+
+<!-- MDBootstrap CDN -->
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- SCRIPTS -->
+
+<!-- JQuery -->
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/tether.min.js"></script>
+
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+
+</body>
+</html>
